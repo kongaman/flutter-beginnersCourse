@@ -12,18 +12,25 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
+
+  var myColor = Colors.red;
+
+  changeColor() {
+    print(myColor);
+    myColor = Colors.blue;
+    print(myColor);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blueAccent,
+      color: myColor,
       child: Center(
         child: RaisedButton(
-          child: Text(
-            "Click",
-            textDirection: TextDirection.ltr,
-          ),
+          child: Text("Click"),
           onPressed: () {
             print("Hi from statefullWidget");
+            changeColor();
           },
         ),
       ),

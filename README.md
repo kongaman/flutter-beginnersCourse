@@ -19,15 +19,15 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
 ## Lectures
  * First Lectures  are about basic like container and how to add color and text.
  * Stateless Widget is used if its really static like a Welcome-Message etc. if somtehing changes it's style or anything use stateful
- * Stateful Widget - Clickable button
-        You have to change the main Method for this to work
-        Has to look like this:
+ * Stateful Widget - Clickable button<br>
+        You have to change the main Method for this to work<br>
+        Has to look like this:<br><br>
         
-        void main() => runApp(
+        `void main() => runApp(
               MaterialApp(
                 home: MyStatefulWidget(),
               )
-          );
+          );`<br>
           
           And you need to reboot your virtual device
  
