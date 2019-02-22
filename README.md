@@ -30,4 +30,6 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
           );`<br>
           
           And you need to reboot your virtual device
+ * The first changeColor() works, but it has no effect, because the part of the Application that is cvhanged is not re-rendered
+ * have to use setState( (){ X }) Flutter will now rerender the widegt(s) which use the variable at X
  

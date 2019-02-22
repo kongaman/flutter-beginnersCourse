@@ -16,9 +16,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   var myColor = Colors.red;
 
   changeColor() {
-    print(myColor);
-    myColor = Colors.blue;
-    print(myColor);
+    setState(() {
+      myColor = Colors.blue;
+    });
   }
 
   @override
