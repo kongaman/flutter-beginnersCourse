@@ -1,16 +1,17 @@
 # flutter_app
 
-A new Flutter application.
+A new Flutter application done with AndroidStudio - Plugin Flutter.
+
+## Android Studio
+1. File -> Settings -> Plugins -> Browse Repositories... -> Add Flutter (Dart Installation-Question answer with YES)
+2. View -> check Toolbar
+3. Tools -> AVD Manager
+    * Create virtual Device
+    * choose a Device
+    * choose Software Version (and download whats necessary)
+    * Verify Configuration -> Show advanced setting (Change RAM-size etc...)
+    * fire up virtual Device (takes quite a while the first time)
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+ * First Lectures  are about basic like container and how to add color and text.
+ * StatelessWidget is used if its really static like a Welcome-Message etc. if somtehing changes it's style or anythin use stateful
