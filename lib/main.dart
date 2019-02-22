@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(
-      MaterialApp(
-        home: MyStatefulWidget(),
-      )
-  );
+void main() => runApp(MaterialApp(
+      home: MyStatefulWidget(),
+    ));
 
 class MyStatefulWidget extends StatefulWidget {
   @override
@@ -13,27 +11,22 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
-  var myColor = Colors.red;
-
-  changeColor() {
-    setState(() {
-      myColor = Colors.blue;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: myColor,
-      child: Center(
-        child: RaisedButton(
-          child: Text("Click"),
-          onPressed: () {
-            print("Hi from statefullWidget");
-            changeColor();
-          },
-        ),
-      ),
+    return Column(
+      children: <Widget>[
+        Text("Col 1", textDirection: TextDirection.ltr,),
+        Text("Col 2", textDirection: TextDirection.ltr,),
+        Text("Col 3", textDirection: TextDirection.ltr,),
+        Row(
+          textDirection: TextDirection.ltr,
+          children: <Widget>[
+            Text("R 1", textDirection: TextDirection.ltr,),
+            Text("R 2", textDirection: TextDirection.ltr,),
+            Text("R 3", textDirection: TextDirection.ltr,),
+          ],
+        )
+      ],
     );
   }
 }

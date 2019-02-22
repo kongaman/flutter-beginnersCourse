@@ -17,19 +17,23 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
     * fire up virtual Device (takes quite a while the first time)
 
 ## Lectures
- * First Lectures  are about basic like container and how to add color and text.
- * Stateless Widget is used if its really static like a Welcome-Message etc. if somtehing changes it's style or anything use stateful
- * Stateful Widget - Clickable button<br>
+ * - L29First Lectures  are about basic like container and how to add color and text.
+ * L30 Stateless Widget is used if its really static like a Welcome-Message etc. if somtehing changes it's style or anything use stateful
+ * L31 Stateful Widget - Clickable button<br>
         You have to change the main Method for this to work<br>
-        Has to look like this:<br><br>
+        Has to look like this:<br>
         
-        `void main() => runApp(
+        `
+        void main() => runApp(
               MaterialApp(
                 home: MyStatefulWidget(),
               )
-          );`<br>
+          );
+          `
+          
           
           And you need to reboot your virtual device
- * The first changeColor() works, but it has no effect, because the part of the Application that is cvhanged is not re-rendered
- * have to use setState( (){ X }) Flutter will now rerender the widegt(s) which use the variable at X
+ * L32 The first changeColor() works, but it has no effect, because the part of the Application that is cvhanged is not re-rendered
+ * To re-render you have to use `setState( (){ X })` . Flutter will now re-render the widegt(s) which use the variable at X
+ * L32 Multiple elemnts wit column + row
  
