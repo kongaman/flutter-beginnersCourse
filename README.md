@@ -17,23 +17,25 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
     * fire up virtual Device (takes quite a while the first time)
 
 ## Lectures
- * - L29First Lectures  are about basic like container and how to add color and text.
+ * up to L29 Lectures  are about basics like container and how to add color and text.
  * L30 Stateless Widget is used if its really static like a Welcome-Message etc. if somtehing changes it's style or anything use stateful
  * L31 Stateful Widget - Clickable button<br>
-        You have to change the main Method for this to work<br>
-        Has to look like this:<br>
+   You have to change the main Method for this to work<br>
+   Has to look like this:<br>
         
-        `
+              
         void main() => runApp(
               MaterialApp(
                 home: MyStatefulWidget(),
               )
           );
-          `
           
-          
-          And you need to reboot your virtual device
+   And you need to reboot your virtual device
  * L32 The first changeColor() works, but it has no effect, because the part of the Application that is cvhanged is not re-rendered
  * To re-render you have to use `setState( (){ X })` . Flutter will now re-render the widegt(s) which use the variable at X
- * L32 Multiple elemnts wit column + row
+ * L33 Multiple elemnts wit column + row
+ * L34 Padding... (Caution refers to Top Bottom Left and Right of the Screen)
+ * L35 Cards
+ * L36 adding Icons
+ * 
  
