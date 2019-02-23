@@ -38,4 +38,5 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
  * L35 Cards
  * L36 adding Icons
  * L37 "Expanded" - takes all availabe space and pushes next elements to the right
+ * L38 Images - You have to edit pubspec.yaml. CAUTION: Spaces are important, lines have to be positioned correctly
  

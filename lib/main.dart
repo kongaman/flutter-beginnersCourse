@@ -71,7 +71,10 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 ),
               ),
             ),
-          )
+          ),
+          Image(
+            image: AssetImage("images/neutron.jpg"),
+          ),
         ],
       ),
     );
