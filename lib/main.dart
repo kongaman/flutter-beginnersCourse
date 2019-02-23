@@ -25,14 +25,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               child: Row(
                 textDirection: TextDirection.ltr,
                 children: <Widget>[
-                  Text("Paula", textDirection: TextDirection.ltr),
                   IconButton(
-                    icon: Icon(Icons.airplay),
+                    icon: Icon(Icons.person),
                     onPressed: () {
-                      print("Airplay");
+                      print("Person");
                     },
                   ),
-                  Text("Child3", textDirection: TextDirection.ltr),
+                  Expanded(
+                    child: Text("Paula", textDirection: TextDirection.ltr),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.add),
+                    onPressed: () {
+                      print("add");
+                    },
+                  ),
                 ],
               ),
             ),
@@ -51,8 +58,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         print("Person");
                       },
                     ),
-                    Text("Child2", textDirection: TextDirection.ltr),
-                    Text("Child3", textDirection: TextDirection.ltr),
+                    Expanded(
+                      child: Text("Chris", textDirection: TextDirection.ltr),
+                    ),
+                    IconButton(
+                      icon: Icon(Icons.add),
+                      onPressed: () {
+                        print("add");
+                      },
+                    ),
                   ],
                 ),
               ),

@@ -33,9 +33,9 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
    And you need to reboot your virtual device
  * L32 The first changeColor() works, but it has no effect, because the part of the Application that is cvhanged is not re-rendered
  * To re-render you have to use `setState( (){ X })` . Flutter will now re-render the widegt(s) which use the variable at X
- * L33 Multiple elemnts wit column + row
+ * L33 Multiple elements wit column + row
  * L34 Padding... (Caution refers to Top Bottom Left and Right of the Screen)
  * L35 Cards
  * L36 adding Icons
- * 
+ * L37 "Expanded" - takes all availabe space and pushes next elements to the right
  
