@@ -18,7 +18,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter Beginner", textDirection: TextDirection.ltr,),
+        title: Text("SchnuckiApp", textDirection: TextDirection.ltr,),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.beenhere),
@@ -68,21 +68,21 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               children: <Widget>[
                 ListTile(
                   leading: Icon(Icons.add),
-                  title: Text("Hello there"),
+                  title: Text("Hallo Schatz"),
                   onTap: () {
                     print("tap");
                   },
                 ),
                 ListTile(
                   leading: Icon(Icons.add),
-                  title: Text("Hello there2"),
+                  title: Text("Ich hab"),
                   onTap: () {
                     print("tap");
                   },
                 ),
                 ListTile(
                   leading: Icon(Icons.add),
-                  title: Text("Hello there3"),
+                  title: Text("dich lieb"),
                   onTap: () {
                     print("tap");
                   },
@@ -92,6 +92,12 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             )
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          print("floatingactionbutton pressed");
+        },
       ),
     );
   }
