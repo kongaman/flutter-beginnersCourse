@@ -4,6 +4,11 @@ void main() => runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyStatefulWidget(),
+      theme: ThemeData(
+        primaryColor: Colors.red,
+        accentColor: Colors.lime,
+        brightness: Brightness.dark,
+      ),
     )
 );
 
