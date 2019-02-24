@@ -106,7 +106,15 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
       body: Column(
         children: <Widget>[
-          Text("Body", textDirection: TextDirection.ltr,),
+          TextField(
+            decoration: InputDecoration(
+              icon: Icon(Icons.person),
+              hintText: "Username",
+            ),
+            onChanged: (input){
+              print(input);
+            },
+          ),
         ],
       ),
     );
