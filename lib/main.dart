@@ -19,6 +19,8 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
+  bool checkInput = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,13 +108,26 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
       body: Column(
         children: <Widget>[
-          TextField(
-            decoration: InputDecoration(
-              icon: Icon(Icons.person),
-              hintText: "Username",
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextField(
+              decoration: InputDecoration(
+                icon: Icon(Icons.person),
+                hintText: "Username",
+              ),
+              onChanged: (input){
+                print(input);
+              },
             ),
-            onChanged: (input){
-              print(input);
+          ),
+          Checkbox(
+            value: checkInput,
+            onChanged: (bool value) {
+              setState(() {
+                print(value);
+                checkInput = value;
+
+              });
             },
           ),
         ],
