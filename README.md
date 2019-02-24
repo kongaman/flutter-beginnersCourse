@@ -46,4 +46,51 @@ https://www.udemy.com/free-flutter-beginner-tutorial-build-own-app/learn/v4/over
  * L43 Body
  * L44 User Input: Textfield
  * L45 User Input: Checkbox
+        To have a label aside your chackbox you need somtehing like:
+        
+        CheckboxListTile(
+            title: Text("title text"), // <-- label
+            value: checkedValue,
+            onChanged: (newValue) { ... },
+            // you only need the next line if you want the checkbox to appear left of the label 
+            controlAffinity: ListTileControlAffinity.leading,  
+          )
+          
+ * L46 User Input: RadioButtons
+        To have an explaining ext next to the button you have to specify it via Text, there's no other way atm
+        
+        new Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new Radio(
+              value: 0,
+              groupValue: _radioValue1,
+              onChanged: _handleRadioValueChange1,
+            ),
+            new Text(
+              'Carnivore',
+              style: new TextStyle(fontSize: 16.0),
+            ),
+            new Radio(
+              value: 1,
+              groupValue: _radioValue1,
+              onChanged: _handleRadioValueChange1,
+            ),
+            new Text(
+              'Herbivore',
+              style: new TextStyle(fontSize: 16.0,),
+            ),
+            new Radio(
+              value: 2,
+              groupValue: _radioValue1,
+              onChanged: _handleRadioValueChange1,
+            ),
+            new Text(
+              'Omnivore',
+              style: new TextStyle(fontSize: 16.0),
+            ),
+          ],
+        ),
+                            
+ * L47 Routing
  
