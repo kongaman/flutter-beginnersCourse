@@ -104,6 +104,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
           print("floatingactionbutton pressed");
         },
       ),
+      body: Column(
+        children: <Widget>[
+          Text("Body", textDirection: TextDirection.ltr,),
+        ],
+      ),
     );
   }
 }
