@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'screen2.dart';
+import 'screen3.dart';
+
 
 void main() => runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: MyStatefulWidget(),
+      routes: <String, WidgetBuilder>{
+        "/screen2": (BuildContext context) => Screen2(),
+        "/screen3": (BuildContext context) => Screen3(),
+      },
       theme: ThemeData(
         primaryColor: Colors.red,
         accentColor: Colors.lime,
@@ -35,9 +42,9 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             },
           ),
           IconButton(
-            icon: Icon(Icons.all_inclusive),
+            icon: Icon(Icons.arrow_forward),
             onPressed: () {
-              print("Icon");
+              Navigator.pushNamed(context, "/screen2");
             },
           ),
         ],
@@ -137,6 +144,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 groupValue: gender,
                 onChanged: (int value) {
                   setState(() {
+                    print(value);
                     gender = value;
                   });
                 },
@@ -146,6 +154,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 groupValue: gender,
                 onChanged: (int value) {
                   setState(() {
+                    print(value);
                     gender = value;
                   });
                 },
